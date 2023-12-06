@@ -9,6 +9,8 @@ import EffectHook3 from './components/useHooks/EffectHook3';
 import EffectHook4 from './components/useHooks/EffectHook4';
 import ReducerHook from './components/useHooks/ReducerHook';
 import RefHook from './components/useHooks/RefHook';
+import CallbackHook from './components/useHooks/CallbackHook';
+import { MemoHook } from './components/useHooks/MemoHook';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         <Route exact path="/effect4" element={<EffectHook4 />} />
         <Route exact path="/reducer" element={<ReducerHook />} />
         <Route exact path="/ref" element={<RefHook />} />
+        <Route exact path="/memo" element={<MemoHook />} />
+        <Route exact path="/callback" element={<CallbackHook />} />
       </Routes>
     </div>
   );
